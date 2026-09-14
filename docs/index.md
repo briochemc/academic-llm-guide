@@ -4,7 +4,8 @@ layout: home
 hero:
   name: "GenAI guide"
   text: "for academic research and teachnig"
-  tagline: "A practical guide for using large language models and other generative AI in research and teaching workflows.\nMostly for academics at the CCRC, but some guides may apply more broadly to UNSW and beyond."
+  tagline: "A practical guide for using large language models and other generative AI in research and teaching workflows."
+
 
 
 features:
@@ -28,4 +29,10 @@ features:
     details: Data leakage, reliability, and suggested practices around prompts, audits, and tool choice.
     link: /risks
     linkText: Read
+  - title: Stories
+    details: Practical accounts from colleagues of using these tools on real research tasks, and what came out of it.
+    link: /stories/
+    linkText: Browse
 ---
+
+This guide is intended for academics at the CCRC, but some of it may apply more broadly.

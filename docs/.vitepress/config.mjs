@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: 'GenAI tools guide',
   description: 'A lightweight, sourced guide to choosing and using generative AI tools (large language models) in research workflows.',
   base: '/academic-llm-guide/',
@@ -15,6 +16,7 @@ export default defineConfig({
       { text: 'Reading & writing', link: '/papers' },
       { text: 'HPC (Gadi)', link: '/gadi' },
       { text: 'Safety', link: '/risks' },
+      { text: 'Stories', link: '/stories/' },
     ],
 
     outline: { level: [2, 3], label: 'On this page' },
@@ -27,4 +29,6 @@ export default defineConfig({
       copyright: 'Public domain (<a href="https://github.com/briochemc/academic-llm-guide/blob/main/LICENSE">Unlicense</a>). Free to use, share, and adapt, with no warranty.',
     },
   },
-})
+
+  mermaid: {},
+}))
