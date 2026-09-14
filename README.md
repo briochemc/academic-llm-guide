@@ -1,10 +1,12 @@
+![Static Badge](https://img.shields.io/badge/Website-blue?style=for-the-badge&link=https%3A%2F%2Fgithub.com%2Fbriochemc%2Facademic-llm-guide)
+
 # GenAI tools guide
 
-This is an attempt at a small vitepress/documentation website to help with choosing and using generative AI tools (large language models).
-I thought I would try this as an alternative to plain word/markdown documents.
+This is an attempt at a small guide as a [website](https://briochemc.github.io/academic-llm-guide/) to help with choosing and using generative AI tools (LLMs).
+This is a (maybe) nice alternative to plain word/markdown documents.
 I think this allows the content to be more organised and users to access what they need quicker.
 (Also it's prettier than plain markdown.)
-Most of it was generated with an LLM, but I did review most of its contents and edit them.
+Most of it was generated with an LLM, but the intent is to fill it up slowly with real content.
 
 The content is published as a VitePress site from the markdown files under [docs/](docs/).
 
