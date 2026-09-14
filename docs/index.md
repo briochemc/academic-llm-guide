@@ -29,10 +29,3 @@ features:
     link: /risks
     linkText: Read
 ---
-
-
-::: info How do I contribute?
-This site was scaffolded by an LLM and is still mostly a template. What will make it useful is your experience: which tools helped you, for what, and how? Things that didn't work are worth sharing too.
-
-Familiar with GitHub? Edit any page in the [repo](https://github.com/briochemc/academic-llm-guide) (the GitHub icon in the top-right corner takes you there) and open a pull request. To preview your changes first, see [Build the site locally](/build-locally). Otherwise, email what you'd add to [b.pasquier@unsw.edu.au](mailto:b.pasquier@unsw.edu.au?subject=GenAI%20guide) and we'll put it in.
-:::

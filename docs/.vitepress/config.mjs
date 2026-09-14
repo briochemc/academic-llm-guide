@@ -23,7 +23,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/briochemc/academic-llm-guide' },
     ],
     footer: {
-      message: 'Made by Benoît Pasquier and contributors; not an official UNSW or CCRC resource. <a href="/academic-llm-guide/build-locally">Build the site locally</a> to contribute.',
+      message: 'Made by Benoît Pasquier and contributors; not an official UNSW or CCRC resource. <a href="/academic-llm-guide/contribute">How to contribute</a>.',
       copyright: 'Public domain (<a href="https://github.com/briochemc/academic-llm-guide/blob/main/LICENSE">Unlicense</a>). Free to use, share, and adapt, with no warranty.',
     },
   },

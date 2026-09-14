@@ -10,7 +10,7 @@ The content is published as a VitePress site from the markdown files under [docs
 
 ## Contributing
 
-Small edits: change the page on GitHub and open a pull request.
+See [How to contribute](https://briochemc.github.io/academic-llm-guide/contribute) (source: [docs/contribute.md](docs/contribute.md)). In short: change the page on GitHub and open a pull request, or email your suggestions.
 
 To preview changes on your own machine before submitting them, follow [Build the site locally](https://briochemc.github.io/academic-llm-guide/build-locally) (source: [docs/build-locally.md](docs/build-locally.md)).
 
