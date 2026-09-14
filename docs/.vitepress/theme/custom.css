@@ -1,0 +1,12 @@
+/* Orange "TBC" badge, used to flag facts not yet confirmed against an official page.
+   Usage in markdown: <Badge type="warning" text="TBC" /> */
+.VPBadge.warning {
+  color: #c2410c;
+  background-color: rgba(249, 115, 22, 0.16);
+  border-color: transparent;
+  font-weight: 600;
+}
+
+.dark .VPBadge.warning {
+  color: #fb923c;
+}
