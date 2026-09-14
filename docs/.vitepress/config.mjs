@@ -13,17 +13,8 @@ export default defineConfig({
       { text: 'UNSW', link: '/guidance' },
       { text: 'Coding', link: '/coding' },
       { text: 'Reading & writing', link: '/papers' },
-      { text: 'Gadi', link: '/gadi' },
+      { text: 'HPC (Gadi)', link: '/gadi' },
       { text: 'Safety', link: '/risks' },
-    ],
-
-    sidebar: [
-      { text: 'GenAI at UNSW', link: '/guidance' },
-      { text: 'GenAI for coding', link: '/coding' },
-      { text: 'Reading & writing papers', link: '/papers' },
-      { text: 'GenAI on Gadi / HPC', link: '/gadi' },
-      { text: 'Risks & practices', link: '/risks' },
-      { text: 'Build the site locally', link: '/build-locally' },
     ],
 
     outline: { level: [2, 3], label: 'On this page' },
@@ -32,7 +23,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/briochemc/academic-llm-guide' },
     ],
     footer: {
-      message: 'Made by Benoît Pasquier and contributors; not an official UNSW or CCRC resource.',
+      message: 'Made by Benoît Pasquier and contributors; not an official UNSW or CCRC resource. <a href="/academic-llm-guide/build-locally">Build the site locally</a> to contribute.',
       copyright: 'Public domain (<a href="https://github.com/briochemc/academic-llm-guide/blob/main/LICENSE">Unlicense</a>). Free to use, share, and adapt, with no warranty.',
     },
   },
