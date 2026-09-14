@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "GenAI guide"
   text: "for academic research and teachnig"
-  tagline: "A practical guide for using large language models and other generative AI in research and teaching workflows.\nMostly for academics at the CCRC, but some guides may apply more broadly to UNSW and beyond.\nMade by Benoît Pasquier and contributors; not an official UNSW or CCRC resource."
+  tagline: "A practical guide for using large language models and other generative AI in research and teaching workflows.\nMostly for academics at the CCRC, but some guides may apply more broadly to UNSW and beyond."
 
 
 features:
