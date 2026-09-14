@@ -37,7 +37,7 @@ The following is orientation, not a sourced recommendation. Check the current do
 :::
 
 - **Containers / devcontainers.** Running the agent inside Docker or a VS Code devcontainer gives stronger isolation than an OS sandbox, at the cost of a slower, less host-native workflow (your local toolchain, GPU, and mounted data may need reconfiguring).
-- **Built-in sandboxes.** Some tools sandbox themselves. Codex's web and IDE surfaces run each task in its own cloud sandbox preloaded with your repository — see [GenAI for coding](/coding#openai-codex).
+- **Built-in sandboxes.** Some tools sandbox themselves. Claude Code has a built-in sandbox that limits filesystem and network access, documented at [Sandbox environments](https://code.claude.com/docs/en/sandbox-environments). Codex's web and IDE surfaces run each task in its own cloud sandbox preloaded with your repository — see [GenAI for coding](/coding).
 - **Least privilege by default.** Give the agent a working directory containing only what it needs, and avoid running it in a shell that already holds credentials (cloud CLI sessions, SSH agent keys, `.env` files) unless it genuinely needs them.
 
 ## Why this matters for research
@@ -51,4 +51,4 @@ Two of the risks listed on [Risks & practices](/risks) are directly reduced by s
 - **Data leakage** — a default-deny network policy means an agent cannot upload files from your machine to an unexpected endpoint, whether by mistake or by following instructions embedded in a file it read.
 - **Irreversible actions** — blocking commands like `git push`, or denying writes outside the workspace, keeps a confused agent from damaging shared repositories or unbacked-up data.
 
-Sandboxing is *not* a substitute for the guidance on what data you may put into an external AI tool in the first place — see [UNSW guidance](/guidance).
+Sandboxing is *not* a substitute for the guidance on what data you may put into an external AI tool in the first place — see [GenAI at UNSW](/guidance).
