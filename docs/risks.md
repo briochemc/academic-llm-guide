@@ -39,4 +39,5 @@ The following are suggested practices.
 - Tracking prompts and outputs can help audit GenAI use
 - Prefer UNSW-provided tools (ChatGPT Edu, Microsoft Copilot Chat, Scite, Scopus AI, Adobe Firefly) over personal accounts when handling unpublished research or sensitive data — and still check the relevant UNSW policy first where privacy, IP, or confidentiality is involved
 - Disclose GenAI use in outputs where it materially contributed, as UNSW's research-conduct guidance requires
+- Run agentic coding tools inside a sandbox — see [Sandboxing agentic tools](/sandboxing)
 - For HPC / Gadi-specific guidance, see [How to use GenAI on Gadi](/gadi)

@@ -1,7 +1,7 @@
 # GenAI tools for coding
 
 ::: tip
-Most of these tools can read, write, and run code on your machine. Be deliberate about which directories and credentials they can reach.
+Most of these tools can read, write, and run code on your machine. See [Sandboxing agentic tools](/sandboxing) for ways to constrain what they can reach.
 :::
 
 Prices are USD per month for one person, as shown on each vendor's pricing page on 8 September 2026. Annual billing is usually cheaper. UNSW-provided tools are listed first. <Badge type="warning" text="TBC" /> marks something we could not confirm on an official page.

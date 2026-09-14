@@ -25,7 +25,7 @@ features:
     link: /gadi
     linkText: Read
   - title: Safety
-    details: Data leakage, reliability, and suggested practices around prompts, audits, and tool choice.
+    details: Data leakage, reliability, sandboxing agentic tools, and suggested practices around prompts, audits, and tool choice.
     link: /risks
     linkText: Read
 ---

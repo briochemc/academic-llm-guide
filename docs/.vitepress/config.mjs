@@ -23,6 +23,7 @@ export default defineConfig({
       { text: 'Reading & writing papers', link: '/papers' },
       { text: 'GenAI on Gadi / HPC', link: '/gadi' },
       { text: 'Risks & practices', link: '/risks' },
+      { text: 'Sandboxing agentic tools', link: '/sandboxing' },
       { text: 'Build the site locally', link: '/build-locally' },
     ],
 
