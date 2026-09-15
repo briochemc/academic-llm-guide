@@ -57,3 +57,9 @@ Every vendor below offers most of these. The second table says what each one is 
 - Cursor: https://cursor.com/pricing · https://cursor.com/docs/cli/overview · https://cursor.com/docs/cloud-agent
 - Google: https://gemini.google/subscriptions/ · https://antigravity.google/pricing · https://jules.google/docs/usage-limits · https://ai.google.dev/gemini-api/docs/pricing · https://geminicli.com/docs/resources/quota-and-pricing/
 - Mistral: https://mistral.ai/pricing · https://mistral.ai/pricing/api/ · https://mistral.ai/products/vibe
+
+## Stories
+
+Accounts from colleagues of using coding assistants on real research tasks. See [all stories](/stories/), or [contribute your own](/contribute).
+
+<StoryCards category="coding" />

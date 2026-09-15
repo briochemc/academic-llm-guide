@@ -31,4 +31,16 @@ export default withMermaid(defineConfig({
   },
 
   mermaid: {},
+
+  // mermaid 11.17 imports fastdom, a CommonJS package that vite must
+  // pre-bundle in dev or the import fails ("does not provide an export named
+  // 'default'") and the diagram shows mermaid's "Syntax error in text" bomb.
+  // vitepress-plugin-mermaid pre-bundles mermaid's older CommonJS
+  // dependencies but not this one; withMermaid merges this list with its own.
+  // Only affects `docs:dev`; the production build was never affected.
+  vite: {
+    optimizeDeps: {
+      include: ['fastdom', 'fastdom/extensions/fastdom-promised.js'],
+    },
+  },
 }))

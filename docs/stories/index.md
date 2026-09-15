@@ -4,4 +4,4 @@ Practical accounts of using generative AI in research work: what the task was, h
 
 <StoryCards />
 
-Have one of your own? See [How to contribute](/contribute). A story is a single markdown file under `docs/stories/` with a title, a one-line description, your name, the date, and the tools involved in its frontmatter.
+Have one of your own? See [How to contribute](/contribute). A story is a single markdown file under `docs/stories/` with a title, a one-line description, your name, the date, the tools involved, and one or more categories (`coding`, `hpc`, `papers`, `unsw`, `safety`) in its frontmatter. Stories also appear at the bottom of each category page they are tagged with.

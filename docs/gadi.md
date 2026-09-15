@@ -35,3 +35,9 @@ Use case (conceptual):
 ::: info Source
 Based on internal communication, not a web source.
 :::
+
+## Stories
+
+Accounts from colleagues of using these tools on Gadi and other HPC systems. See [all stories](/stories/), or [contribute your own](/contribute).
+
+<StoryCards category="hpc" />
