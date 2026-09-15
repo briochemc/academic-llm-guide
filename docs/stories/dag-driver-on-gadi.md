@@ -84,7 +84,7 @@ graph TD
 ```
 
 Having the graph in a text file does two jobs at once.
-It is documentation that a human like me and you right now can read (e.g., in VSCode or online; GitHub renders Mermaid in markdown), and it is a precise specification for the LLM to write the code that will submit jobs according to this pipeline.
+It is documentation that a human like me, and you right now can read (e.g., in VSCode or online; GitHub renders Mermaid in markdown), and it is a precise specification for the LLM to write the code that will submit jobs according to this pipeline.
 
 ## Step 2: have Claude write the driver
 
@@ -104,13 +104,13 @@ Some groups of jobs come up often enough to deserve a name (see examples in tabl
 | `plotall` | `plot1yr-plot10yr-plot100yr-plotNK` |
 | `full` | `preprocessing-run1yr-TMall-NK-run1yrNK-plotNK-plot1yr` |
 
-Another thing I wanted was some sort of "range" notation, when I want to resubmit job `B` but I know an output I need from a previous job `A` is stale (maybe I changed some input for `A` so I need to re-run it).
+Another thing I wanted was some sort of "range" notation, when I want to resubmit job `B`, but I know an output I need from a previous job `A` is stale (maybe I changed some input for `A`, so I need to re-run it).
 So I made it accept `A..B`, which would expand to every step on any path from A to B in the DAG, making sure no link is missing in the pipeline.
 
 ### Examples
 
-Below are some examples of the interace it built for me, and I can even ask the LLM to submit these commands directly for me using plain language.
-Note
+Below are some examples of the interface it built for me, and I can even ask the LLM to submit these commands directly for me using plain language.
+
 
 ```bash
 # Run 1-year simulation and plot
@@ -130,15 +130,16 @@ My actual pipeline actually does a bit more now than that now, but you get the i
 Writing a driver like that was out of my skill set and available time:
 Using a LLM made it possible.
 
-## Important: Why this worked
+## Important (I think): Why does this use of LLMs work?
 
-- **A precise spec.** The LLM cannot guess the pipeline. I built the DAG before by hand, and then pointed the LLM to it. The LLM did help me review that I did not miss any links though.
+- **A precise specification.** The LLM cannot guess the pipeline. I built the DAG before by hand, and then pointed the LLM to it. The LLM did help me review that I did not miss any links though.
 - **The diagram stays useful after the code is written.** When the pipeline changes, the graph is edited first, and the driver follows. I understand what it does, and the driver script can actually be submitted "dry" for the LLM to check that it would submit the right jobs with the right deps.
-- **Small conveniences are cheap to ask for.** Shortcuts and range notation did not take too much work (bvack and forth with the LLM) but they make the driver "pleasant" to use day to day.
-- **The driver's own documentation**, which the LLM wrote, and which contains examples such as those I showed above, also allows me to directly ask the LLM to submit these driver commands in plain english, so now I can prompt things like:
+- **Small conveniences are cheap to ask for.** Shortcuts and range notation did not take too much work (back and forth with the LLM) but they make the driver much easier to use.
+- **The driver's own documentation**, which the LLM wrote, and which contains more examples, also allows me to directly ask the LLM to submit these driver commands in plain English, so now I can prompt things like:
     ```
     I have updated the input data for the `vel` job.
     I need job `A` to use these new inputs.
     Can you resubmit `vel..A` through the driver?
     ```
 
+You can find all of the actual files in my [ACCESS-OM2_x_Oceananigans repository on GitHub](https://github.com/TMIP-code/ACCESS-OM2_x_Oceananigans) (for the detail, it's a pipeline to spin up the ocean age using ACCESS-OM2 archives, and specifically aimed at OM2-01, its high resolution version; and a paper is in preparation).
